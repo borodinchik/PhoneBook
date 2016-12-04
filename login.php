@@ -15,7 +15,7 @@ function generateCode($lenght=6){
 }
 
 #Соединение с БД
-$mysqli = new mysqli("PhoneBook", "root", "", "phonebook");
+$mysqli = new mysqli("localhost", "root", "", "phonebook");
 if ($mysqli->connect_errno){
     echo "Не удалось подключится БД: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
 }
